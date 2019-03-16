@@ -1,5 +1,6 @@
 
 
+
 <style>
   .smaller-image {
     width: 100px;
@@ -8,6 +9,7 @@
     color: brown;
   }
   h2{
+    font-size:24px;
     background-color: #ffffe0;
   }
   a {
@@ -97,4 +99,3 @@ HTC</label> <br>
     <label><input type="checkbox" name="brand">  
     OPPO</label><br></b>
     <button type="submit">Submit</button>
-
