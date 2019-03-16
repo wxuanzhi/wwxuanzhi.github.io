@@ -1,37 +1,99 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/wxuanzhi/wwxuanzhi.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<style>
+  .smaller-image {
+    width: 100px;
+  }
+  .brown-text {
+    color: brown;
+  }
+  h2{
+    background-color: #ffffe0;
+  }
+  a {
+    font-size: 16px;
+    font-family: monospace;
+  }
+  div{
+    font-size: 20px;
+    font-family: monospace;
+    background-color: ;
+  }
+    div { 
+      background-color: ; 
+    }
+    p{
+      background-color:;
+    } 
+</style>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<h2 class="brown-text">2017年台灣手機品牌年度排名</h2>
+<main>
+<p>	NO.1 APPLE</p>
+<img src="https://tse3.mm.bing.net/th?id=OIP.EHCgsaParSBUsMviq0GBaAHaJl&pid=15.1&P=0&w=300&h=300"/>
 
-### Markdown
+<div>
+  <a> Brief Introduction:</a>
+<ul>
+<li> 成立於1976年</li>
+<li> 由Steve Paul Jobs等人創立</li>
+<li> 總部:美國</li>
+</ul>
+</div>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<p>NO.2 SAMSUNG</p>
+  <img src="https://tse2.mm.bing.net/th?id=OIP.k_MJeLBvQ2V-37mA4aNFngHaHa&pid=15.1&P=0&w=300&h=300"/>
+  <div>
+  <a> Brief Introduction:</a>
+  <ul>
+    <li> 成立於1969年</li>
+    <li> 總部:韓國</li>
+    <li> 是三星集團旗下的子公司，韓國最大的消費電子產品及電子元件製造商，亦是全球最大的資訊科技公司</li>
+  </ul>
+  </div>
 
-```markdown
-Syntax highlighted code block
+  <p> NO.3 ASUS</p>
+  <img src="https://tse4.mm.bing.net/th?id=OIP.3UK4wIpZaB9ALx-HAKx6SQHaHa&pid=15.1&P=0&w=300&h=300"/>
+ <div>
+  <a> Brief Introduction:</a>
+  <ul>
+    <li> 成立於1989年</li>
+    <li> 總部:台灣</li>
+    <li> 2018年台灣品牌價值16.19億美元，在台灣名列第一。</li>
+  </ul>
+ </div>
 
-# Header 1
-## Header 2
-### Header 3
+<P> NO.4 HTC</P>
+<img src="https://tse3.mm.bing.net/th?id=OIP.lNGOS3UpP-Lbzz2rsS8ZtgHaHa&pid=15.1&P=0&w=300&h=300"/>
+<div>
+  <a> Brief Introduction:</a>
+<ul>
+  <li> 成立於1997年</li>
+  <li> 總部:台灣</li>
+  <li> 目前以研發與製造智慧型手機與虛擬實境（VR）裝置為主要業務，為全球第二大VR頭戴顯示器製造商。</li>
+  <li> 2018年台灣品牌價值2.67億美元，在台灣名列第14。</li>
+</ul>
+</div>
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/wxuanzhi/wwxuanzhi.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<p> NO.5 OPPO</p>
+<img src="https://tse4.mm.bing.net/th?id=OIP.vypn0HmBguCCJ9anGNXQhgHaDx&pid=15.1&P=0&w=389&h=199"/>
+<div>
+  <a> Brief Introduction:</a>
+<ul>
+  <li> 成立於2004年</li>
+  <li> 總部:中國</li>
+  <li>是中國大陸電子裝置及智慧型終端製造公司</li>
+</ul>
+</div>
+<b> Which brand do you like the most?<br>
+</div>
+    <label><input type="checkbox" name="brand"> 
+    APPLE</label><br>
+    <label><input type="checkbox" name="brand"> 
+SAMSUNG</label><br>
+    <label><input type="checkbox" name="brand">
+ASUS</label><br>
+    <label><input type="checkbox" name="brand">
+HTC</label> <br>
+    <label><input type="checkbox" name="brand">  
+    OPPO</label><br></b>
+    <button type="submit">Submit</button>
