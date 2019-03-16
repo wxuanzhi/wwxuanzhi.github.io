@@ -1,6 +1,3 @@
-
-
-
 <style>
   .smaller-image {
     width: 100px;
@@ -19,7 +16,7 @@
   div{
     font-size: 20px;
     font-family: monospace;
-    background-color: ;
+    background-color:#77FFCC ;
   }
     div { 
       background-color: ; 
