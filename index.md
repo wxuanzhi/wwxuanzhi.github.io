@@ -1,4 +1,5 @@
 
+
 <style>
   .smaller-image {
     width: 100px;
@@ -22,7 +23,7 @@
       background-color: ; 
     }
     p{
-      background-color:;
+      background-color: #FF3333;
     } 
 </style>
 
@@ -85,7 +86,6 @@
 </ul>
 </div>
 <b> Which brand do you like the most?<br>
-</div>
     <label><input type="checkbox" name="brand"> 
     APPLE</label><br>
     <label><input type="checkbox" name="brand"> 
@@ -97,3 +97,4 @@ HTC</label> <br>
     <label><input type="checkbox" name="brand">  
     OPPO</label><br></b>
     <button type="submit">Submit</button>
+
