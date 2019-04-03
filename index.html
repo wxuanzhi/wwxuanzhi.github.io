@@ -49,9 +49,22 @@
         background-color: #adff2f;
   }
 </style>
-
-<h2 style="display:none">2017年台灣手機品牌年度排名</h2>
-$('h2').fadeIn('slow');
+$(document).ready(function(){
+  //Check to see if the window is top if not then display button
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.scrollToTop').fadeIn();
+    } else {
+      $('.scrollToTop').fadeOut();
+    }
+  });
+ 
+  //Click event to scroll to top
+  $('.scrollToTop').click(function(){
+    $('html, body').animate({scrollTop : 0},400);
+    return false;
+  });
+});
 
       <div>
   <div align="center">
@@ -142,21 +155,5 @@ HTC</label> <br>
     OPPO</label></b>
     <button type="submit">Submit</button>
 
-$(document).ready(function(){
-  //Check to see if the window is top if not then display button
-  $(window).scroll(function(){
-    if ($(this).scrollTop() > 100) {
-      $('.scrollToTop').fadeIn();
-    } else {
-      $('.scrollToTop').fadeOut();
-    }
-  });
- 
-  //Click event to scroll to top
-  $('.scrollToTop').click(function(){
-    $('html, body').animate({scrollTop : 0},400);
-    return false;
-  });
-});
 
 
