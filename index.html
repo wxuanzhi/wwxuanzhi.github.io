@@ -127,7 +127,19 @@ HTC</label> <br>
     <label><input type="checkbox" name="brand">  
     OPPO</label></b>
     <button type="submit">Submit</button>
-                         </br>   
-                         <div class="4u">
-						<p><a href="#" class="button">回頂端</a></p>
-					</div>
+                         </br> 
+			 
+                        <script>
+$(function(){
+	$('#BackTop').click(function(){ 
+		$('html,body').animate({scrollTop:0}, 333);
+	});
+	$(window).scroll(function() {
+		if ( $(this).scrollTop() > 300 ){
+			$('#BackTop').fadeIn(222);
+		} else {
+			$('#BackTop').stop().fadeOut(222);
+		}
+	}).scroll();
+});
+</script>
