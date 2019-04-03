@@ -1,4 +1,3 @@
-
 <body background="https://i.imgur.com/yOyk6VU.jpg"></body>
       <div>
   <div align="center">
@@ -70,11 +69,8 @@
   <li>是中國大陸電子裝置及智慧型終端製造公司</li>
 </ul>
 </div>
-</d>
- </center>
-                     
-                     
-		     <br>  </br>
+		     </d>
+		     <br>            </br>
    <b> Which brand do you like the most?
     <label><input type="checkbox" name="brand"> 
     APPLE</label><br>
@@ -89,7 +85,33 @@ HTC</label> <br>
     <button type="submit">Submit</button>
 			 
 			 
+<script src="js/jquery.min.js">
+$("gotop").click(function(){
+	jQuery(html.body").animate({
+	       scrollTop:0
+	       },1000),
+});
+	$(window).scroll(function(){
+		if($(this).scrollTop()>300){
+			$('#gotop').stop().fadeOut("fast");
+		}
+	});
+</script>
+<div id="gotop"></div>
+			 
    <style>
+	   #gotop{
+		   position:fixed;
+		   border-radius:50px;
+		   right:20px;
+		   bottom:30px;
+		   padding:10px 16px;
+		   font-sized:25px;
+		   background:rgba(228,211,211,0.36);
+		   color:#FAFCFD;
+		   cursor:pointer;
+		   z-index:1000
+	   }
   .afeeee-background{
     background-color: #afeeee;
   }
