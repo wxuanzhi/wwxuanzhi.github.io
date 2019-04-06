@@ -83,58 +83,41 @@ HTC</label> <br>
     OPPO</label></b>
     <button type="submit">Submit</button>
 			 
-<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
-			 <script>
-//<![CDATA[
-(function () {
-$("body").append("<img id='goTopButton' style='display: none; z-index: 5; cursor: pointer;' title='回到頂端'/>");
-var img = "http://1.bp.blogspot.com/-zMfrIkyhlVs/Uh7FePoKU8I/AAAAAAAAHnA/WA0H_vbWAWc/s1600/go-top.png",
-locatioin = 1/2, // 按鈕出現在螢幕的高度
-right = 10, // 距離右邊 px 值
-opacity = 0.3, // 透明度
-speed = 500, // 捲動速度
-$button = $("#goTopButton"),
-$body = $(document),
-$win = $(window);
-$button.attr("src", img);
-$button.on({
-mouseover: function() {$button.css("opacity", 1);},
-mouseout: function() {$button.css("opacity", opacity);},
-click: function() {$("html, body").animate({scrollTop: 0}, speed);}
-});
-window.goTopMove = function () {
-var scrollH = $body.scrollTop(),
-winH = $win.height(),
-css = {"top": winH * locatioin + "px", "position": "fixed", "right": right, "opacity": opacity};
-if(scrollH > 20) {
-$button.css(css);
-$button.fadeIn("slow");
-} else {
-$button.fadeOut("slow");
-}
-};
-$win.on({
-scroll: function() {goTopMove();},
-resize: function() {goTopMove();}
-});
-} )();
-//]]>
-</script>
-			 
-
+<a href="#" class="scrollToTop">↑TOP</a>
+			       <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script>$(document).ready(function(){
+  //Check to see if the window is top if not then display button
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.scrollToTop').fadeIn();
+    } else {
+      $('.scrollToTop').fadeOut();
+    }
+  });
+ 
+  //Click event to scroll to top
+  $('.scrollToTop').click(function(){
+    $('html, body').animate({scrollTop : 0},400);
+    return false;
+  });
+											  });</script>
 				 
    <style>
- #gotop {
-    position: fixed;
-    border-radius: 50px;
-    right: 20px;
-    bottom: 30px;
-    padding: 10px 16px;
-    font-size: 25px;
-    background: rgba(228, 211, 211, 0.36);
-    color: #FAFCFD;
-    cursor: pointer;
-    z-index: 1000;
+.scrollToTop{
+  padding:10px;
+  text-align:center;
+  background:WhiteSmoke;
+  font-weight:bold;
+  color:#555;
+  text-decoration:none;
+  position:fixed;
+  bottom:30px;
+  right:30px;
+  display:none;
+}
+.scrollToTop:hover{
+  background:SkyBlue;
+  text-decoration:none;
 }
   .afeeee-background{
     background-color: #afeeee;
